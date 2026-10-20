@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+    background: linear-gradient(-45deg, #09131b, #241f54, #6b0010);
+    background-size: 400% 400%;
+    animation: moveGradient 15s ease infinite;
+    overflow: hidden;
+        } 
+
+
+
+
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .shape {
+            position: absolute;
+            bottom: -100px;
+            animation: floatUp 6s infinite ease-in-out;
+            opacity: 0.8;
+        }
+
+
+    .heart1 {
+      width: 100px;
+      height: 90px;
+      left: 20%;
+     animation-duration: 7s;
+    animation-delay: 0s;
+    }
+    .heart1:before,
+    .heart1:after {
+      position: absolute;
+      content: "";
+      left: 50px;
+      top: 0;
+      width: 50px;
+      height: 80px;
+      background: #ff7eb3;
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+    }
+    .heart1:after {
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+    }
+
+
+
+   .heart {
+      
+      width: 100px;
+      height: 90px;
+      left: 40%;
+     animation-duration: 5s;
+    animation-delay: 2s;
+    }
+    .heart:before,
+    .heart:after {
+      position: absolute;
+      content: "";
+      left: 50px;
+      top: 0;
+      width: 50px;
+      height: 80px;
+      background: #db4d88;
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+    }
+    .heart:after {
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+    }
+
+        
+ .heart3 {
+      
+      width: 100px;
+      height: 90px;
+      left: 70%;
+     animation-duration: 8s;
+    animation-delay: 1s;
+    }
+    .heart3:before,
+    .heart3:after {
+      position: absolute;
+      content: "";
+      left: 50px;
+      top: 0;
+      width: 50px;
+      height: 80px;
+      background: #ff7eb3;
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+    }
+    .heart3:after {
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+    }
+
+
+.heart4 {
+      
+      width: 100px;
+      height: 90px;
+      left: 90%;
+     animation-duration: 4s;
+    animation-delay: 1s;
+    }
+    .heart4:before,
+    .heart4:after {
+      position: absolute;
+      content: "";
+      left: 50px;
+      top: 0;
+      width: 50px;
+      height: 80px;
+      background: #981c50;
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+    }
+    .heart4:after {
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+    }
+
+.heart5 {
+      
+      width: 100px;
+      height: 90px;
+      left: 55%;
+     animation-duration: 7s;
+    animation-delay: 1s;
+    }
+    .heart5:before,
+    .heart5:after {
+      position: absolute;
+      content: "";
+      left: 50px;
+      top: 0;
+      width: 50px;
+      height: 80px;
+      background: #981c50;
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+    }
+    .heart5:after {
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+    }
+    .heart6 {
+      
+      width: 100px;
+      height: 90px;
+      left: 5%;
+     animation-duration: 9s;
+    animation-delay: 0s;
+    }
+    .heart6:before,
+    .heart6:after {
+      position: absolute;
+      content: "";
+      left: 50px;
+      top: 0;
+      width: 50px;
+      height: 80px;
+      background: #914b68;
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+    }
+    .heart6:after {
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+    }
+
+
+        
+    
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0.8;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-110vh);
+                opacity: 0;
+            }
+        }
+        @keyframes moveGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        
+        <div class="shape heart1"></div>
+        <div class="shape heart"></div>
+        <div class="shape heart3"></div>
+        <div class="shape heart4"></div>
+        <div class="shape heart5"></div>
+        <div class="shape heart6"></div>
+    </div>
+
+</body>
+</html>
